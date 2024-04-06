@@ -26,13 +26,16 @@ Verification of 1X1 router in System Verilog. The main intension of this reposit
 
   #### Black Box Design
 
-  ![image](https://github.com/lmadem/DPRAM/assets/93139766/899a5cbf-4f4a-4ff5-a67b-499e9c8d2034)
+  ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/d31edb8e-35a0-49c5-b6dc-a43c88983832)
 
   #### Packet Format
 
+  ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/7fff2584-70f0-4da7-ac12-d0b45958d596)
 
+  
   #### Input and Output Ports, Control and Status Registers
 
+  
 
   <li> This router 1X1 is designed in system verilog. Please check out the file "router.sv" </li>
   
