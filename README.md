@@ -72,8 +72,6 @@ Verification of 1X1 router in System Verilog. The main intension of this reposit
   <details> 
     <summary> Test Plan </summary>
 
-  ![image](https://github.com/lmadem/DPRAM/assets/93139766/513b9c91-3fff-4d29-95aa-8d11f876bfff)
-
   </details>
 </details>
 
