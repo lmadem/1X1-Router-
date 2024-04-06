@@ -4,7 +4,9 @@ Verification of 1X1 router in System Verilog. The main intension of this reposit
 <details>
   <summary> Defining the black box design of Router 1X1 </summary>
 
-  ### Router 1X1 is a switch, which can transfer a series of data in form of a packet from source port to the destination port. This DUT is not synthesizable, it is only designed for verification practices. The design has control status registers.
+  ### Router 1X1 is a switch, which can transfer a series of data in form of a packet from source port to the destination port. 
+  
+  <li> Note :: This DUT is not synthesizable, it is only designed for verification practices. The design has control status registers. </li>
 
   <li> Input Ports : clk, reset, dut_inp, inp_valid </li>
 
@@ -33,7 +35,10 @@ Verification of 1X1 router in System Verilog. The main intension of this reposit
   ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/7fff2584-70f0-4da7-ac12-d0b45958d596)
 
   
-  #### Input and Output Ports, Control and Status Registers
+  #### Input and Output Ports
+
+  ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/118731e4-df38-48f2-b8ec-253fdfda3fcf)
+
 
   
 
