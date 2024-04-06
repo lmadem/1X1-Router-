@@ -4,7 +4,7 @@ Verification of 1X1 router in System Verilog. The main intension of this reposit
 <details>
   <summary> Defining the black box design of Router 1X1 </summary>
 
-  ### Router 1X1 is a switch, which can transfer a series of data in form of a packet from source port to the destination port. This DUT is not synthesizable, it is only designed for verification practices. The design also has control status registers.
+  ### Router 1X1 is a switch, which can transfer a series of data in form of a packet from source port to the destination port. This DUT is not synthesizable, it is only designed for verification practices. The design has control status registers.
 
   <li> Input Ports : clk, reset, dut_inp, inp_valid </li>
 
@@ -123,7 +123,12 @@ https://www.edaplayground.com/x/Tmmv
 <details>
   <summary>Challenge</summary>
 
-#### Verifying all the address location of a Memory
+#### The error-injection and erroneous cases 
+<li> The simulation environment is hanging and going into a forever loop. It is because the driver, imonitor and omonitor run() tasks run forever, the output monitor block will end up in a forever loop </li>
+<li> Here, the design has status registers and it became bit easy to test error-injection and erroneous testcases </li>
+<li> But in general, the mechanism to control the simulation environment in an organized way even for error-injection and erroneous cases are bit tricky</li>
+<li> The solution would be using UVM, as it has objections and timeouts </li>
+
 
 </details>
 
