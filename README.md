@@ -34,13 +34,28 @@ Verification of 1X1 router in System Verilog. The main intension of this reposit
 
   ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/7fff2584-70f0-4da7-ac12-d0b45958d596)
 
+  <li> Minimum packet length is 12 bytes and max is 2000 bytes </li>
+  <li> RTL(router) accepts 8-bits per clock </li>
+  <li> inp_valid indicates start/end of packet at the source port </li>
+  <li> outp_valid indicates start/end of packet at the destination port </li>
   
-  #### Input and Output Ports
+  #### I/O Pins
 
   ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/118731e4-df38-48f2-b8ec-253fdfda3fcf)
 
+  #### pins to access Control Registers
 
+  ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/85085177-f3a3-4f23-b4f1-3c7958c807b9)
+
+  #### Control Registers
   
+  ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/c2dda49e-ffbf-4f2b-9a99-243d69e2078d)
+
+
+  #### Status Registers
+
+  ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/9b170ef9-f910-4590-bd70-91014c153986)
+
 
   <li> This router 1X1 is designed in system verilog. Please check out the file "router.sv" </li>
   
