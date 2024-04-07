@@ -94,67 +94,67 @@ Verification of 1X1 router in System Verilog. The main intension of this reposit
 <details>
   <summary> EDA Results </summary>
   
-   #### Base_Test EDA Waveform
+   #### Base_Test EDA Result
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/5f4b171e-2e60-4081-9ce9-f9bfe7b6fcf6)
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/8bfe0037-5c14-438e-9188-849ba0037f2c)
 
-   #### New_Test1 EDA Waveform
+   #### New_Test1 EDA Result
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/30043458-c3fd-4cd9-b411-40082e73f45b)
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/39887b3c-4f96-4bf2-b01b-be799cf5c5fa)
 
-   #### New_Test2 EDA Waveform
+   #### New_Test2 EDA Result
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/50e03fff-0076-416a-869c-a4030530b2a4)
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/d55b84a8-9010-463e-a07c-f14f00fea73a)
 
-   #### New_Test3 EDA Waveform
+   #### New_Test3 EDA Result
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/4637978a-efb3-4054-800a-a9ba98bb5d4a)
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/b0867691-5832-40e4-9ec2-f7e5fdcbf055)
 
-   #### New_Test4 EDA Waveform
+   #### New_Test4 EDA Result
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/fc9a80d6-0bcd-4783-bdf4-d7e6ff565c8b)
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/d2a2c247-ec2f-4bc9-8e5f-d3a3e3252bce)
 
-   #### New_Test5 EDA Waveform
+   #### New_Test5 EDA Result
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/5d4b7b87-131c-4b14-867e-f868287dbb6f)
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/eb5da57c-46e0-47c2-9bf3-1cf6e14d5be8)
 
-   #### New_Test6 EDA Waveform
+   #### New_Test6 EDA Result
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/21685714-bab3-4376-9888-6ce4e2b0c5e6)
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/3ef79023-ef33-4166-8341-a4e79024bd41)
 
-   #### New_Test7 EDA Waveform
+   #### New_Test7 EDA Result
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/c197ef28-4689-474a-b7ef-03a7c2e5f4b4)
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/b22073d1-e600-46eb-b959-982bdd6380e1)
 
-   #### New_Test8 EDA Waveform
+   #### New_Test8 EDA Result
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/37877375-3fb6-4eea-b352-07273961def5)
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/46320450-159c-4bef-810b-e464627f0822)
 
-   #### New_Test9 EDA Waveform
+   #### New_Test9 EDA Result
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/2cbac9f7-7eac-4a61-807b-bd2790d2c3b4)
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/7456aba8-0526-4b32-898f-6c0c1046e68e)
 
-   #### New_Test10 EDA Waveform
+   #### New_Test10 EDA Result
 
    ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/3fa6ebc1-b06b-4fc5-9841-1a937eb1b837)
 
@@ -174,16 +174,16 @@ https://www.edaplayground.com/x/Tmmv
 
   #### Verification Standards
 
-  <li> Constrained random stimulus, robust generator and driver, and In-order scoreboard </li>
+  <li> Constrained random stimulus, robust generator, driver, monitors, In-order scoreboard, coverage component and environment </li>
 
   #### Simulation Steps
   
   <details>
     <summary> SV Environment </summary>
 
-##### Step 1 : UnComment "top.sv", "interface.sv", and "test.sv"(lines 4,5,6) in testbench.sv file 
+##### Step 1 : UnComment "top.sv", "interface.sv", and "program_test.sv"(lines 3,4,5) in testbench.sv file 
 
-##### Step 2 : To run individual tests, please look into the above attached screenshots in SV Environment folder of Verification Results and EDA Waveforms
+##### Step 2 : To run individual tests, please look into the above attached screenshots of EDA Results
 
   </details>
 </details>
@@ -192,10 +192,11 @@ https://www.edaplayground.com/x/Tmmv
   <summary>Challenge</summary>
 
 #### The error-injection and erroneous cases 
-<li> The simulation environment is hanging and going into a forever loop. It is because the driver, imonitor and omonitor run() tasks run forever, the output monitor block will end up in a forever loop </li>
-<li> Here, the design has status registers and it became bit easy to test error-injection and erroneous testcases </li>
+<li> The simulation environment is hanging and going into a forever loop. It is because the run() task of driver, imonitor and omonitor components run forever, the output monitor block will end up in a forever loop when the stimulus is error-injected or erroneous </li>
+<li> Here, the design has status registers and it became easy to test error-injection and erroneous testcases </li>
 <li> But in general, the mechanism to control the simulation environment in an organized way even for error-injection and erroneous cases are bit tricky</li>
 <li> The solution would be using UVM, as it has objections and timeouts </li>
+<li> Reference link for the above problem : https://verificationacademy.com/forums/t/how-to-stop-a-simulation-in-a-controlled-way/35064 </li>
 
 
 </details>
