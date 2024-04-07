@@ -73,15 +73,10 @@ Verification of 1X1 router in System Verilog. The main intension of this reposit
 
 ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/697e4379-717d-4769-856a-adc093a3943d)
 
-
-
-
 </details>
 
 <details>
-  <summary> Verification Results and EDA </summary>
-
-  </details>
+  <summary> Verification Results </summary>
 
    <li> Built a robust verification environment in System Verilog and implemented all the testcases as per the testplan. The SV testbench verification environment consists of header class, packet class, generator class, driver class, Monitor classes, scoreboard class, environment class, base_test class, new test classes, program block, top module, interface and the design </li>
 
@@ -90,7 +85,7 @@ Verification of 1X1 router in System Verilog. The main intension of this reposit
    #### Test Plan Status
   
 ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/9d1431c1-241d-41be-815a-700eb5ebc5d3)
-
+</details>
 <details>
   <summary> EDA Results </summary>
   
@@ -183,7 +178,7 @@ https://www.edaplayground.com/x/Tmmv
 
 ##### Step 1 : UnComment "top.sv", "interface.sv", and "program_test.sv"(lines 3,4,5) in testbench.sv file 
 
-##### Step 2 : To run individual tests, please look into the above attached screenshots of EDA Results
+##### Step 2 : To run individual tests, please look into the above attached screenshots in EDA Results
 
   </details>
 </details>
