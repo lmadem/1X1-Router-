@@ -7,7 +7,7 @@
 
 //new_test2 : This test is to send the stimulus from a single source port to various destination ports using constraints (SA2 -> DA*) - PASS
 
-//new_test3 : This test is to send the stimulus to a single destination port from various destination ports using constraints (SA* -> DA3) - PASS
+//new_test3 : This test is to send the stimulus to a single destination port from various source ports using constraints (SA* -> DA3) - PASS
 
 //new_test4 : This test is to send the stimulus SA4 -> DA4 - PASS
 
