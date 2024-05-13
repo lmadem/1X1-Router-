@@ -88,36 +88,28 @@ Verification of 1X1 router in System Verilog & UVM. The main intension of this r
   
 ![image](https://github.com/lmadem/1X1-Router-/assets/93139766/9d1431c1-241d-41be-815a-700eb5ebc5d3)
 </details>
-<details>
-  <summary> EDA Results </summary>
 
-</details>
 </details>
 
 <details>
-  <summary> EDA Playground Link and Simluation Steps </summary>
+  <summary> EDA Playground Links </summary>
 
   #### EDA Playground Link
 
   ```bash
 https://www.edaplayground.com/x/Tmmv
+  ```
+
+  ```bash
 https://www.edaplayground.com/x/QeUL
   ```
 
   #### Verification Standards
 
-  <li> Constrained random stimulus, robust generator, driver, monitors, In-order scoreboard, coverage component and environment </li>
+  <li> SV : Constrained random stimulus, robust generator, driver, monitors, In-order scoreboard, coverage component and environment </li>
+  <li> UVM : In-line constraints, factory override mechanisms, and UVM callbacks </li>
 
-  #### Simulation Steps
   
-  <details>
-    <summary> SV Environment </summary>
-
-##### Step 1 : UnComment "top.sv", "interface.sv", and "program_test.sv"(lines 3,4,5) in testbench.sv file 
-
-##### Step 2 : To run individual tests, please look into the above attached screenshots in EDA Results
-
-  </details>
 </details>
 
 <details>
