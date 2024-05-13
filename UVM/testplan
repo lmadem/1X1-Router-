@@ -1,0 +1,31 @@
+//This testplan is to verify the functionality of the design : router 1 X 1. It includes basic functionality checks, error injection tests, and erroneous tests
+
+// test_sa1_da1 : The purpose of this test is to verify the basic functionality of the design through self-checking mechanism. This includes standard packet sequence as per the design - PASS
+
+//test_sa_da : The purpose of this test is to drive the stimulus within the range of addresses 1 to 4 for the sa and da fields in the packet and hit 100% functional coverage - PASS
+//enable function (randomize_with_combinations()) - line 59 in the packet class to acheive 100% functional coverage within minimal packets using directed stimuli
+
+//test_sa2 : This test is to send the stimulus from a single source port to various destination ports (SA2 -> DA*) - PASS
+
+//test_da3: This test is to send the stimulus to a single destination port from various source ports (SA* -> DA3) - PASS
+
+//test_equal_size : This test is to send the stimulus packets of equal sizes - PASS
+
+//test_full_size : This test is to send the stimulus packets of full size(2000 Bytes) - PASS
+
+//test_mixed_size : This test is to send the stimulus packets of mixed-sizes and hit the coverage - PASS(used randomization)
+
+
+//erroneous test
+//test_invalid_da : This test is to drive invalid da addresses in the DA port and see the behaviour of the design - PASS
+//This test is completed through factory override mechanism. enhanced the existing packet class to a new class(packet_invalid_da) which contains invalid da addresses. Look "packet_invalid_da.sv", "invalid_DA_sequence.sv", "Invalid_shutdown_seq.sv", and "test_invalid_da.sv" 
+
+//erroneous test
+//test_invalid_len : This test is to drive the stimulus packets of invalid sizes and see the behaviour of the design - PASS
+//This test is completed through factory override mechanism. enhanced the existing packet class to a new class(packet_invalid_len) which contains invalid packet sizes. Look "packet_invalid_len.sv", "invalid_len_sequence.sv", "Invalid_shutdown_seq.sv", and "test_invalid_len.sv"
+
+//error injection test
+//crc_test_callback: This test is to inject invalid crc in the packet and see the behaviour of the test - PASS 
+//This test is completed using UVM callback mechanism, injected an error in the input packet without modifying the environment. Look "callbacks_crc.sv"(which has pre_send & post_send methods & hooks), "crc_shutdown_seq.sv"(for reading status register), and "crc_test_callback.sv"(for configuring the test)
+
+
